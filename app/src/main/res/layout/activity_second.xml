@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <!-- TextViews for displaying personal info -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/group_spacing"
+                android:text="@string/title_personal_information" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/label_top_padding"
+                            android:text="@string/label_name"
+                            android:textSize="@dimen/label_size" />
+
+                        <TextView
+                            android:id="@+id/nameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_name"
+                            android:textSize="@dimen/content_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/label_top_padding"
+                            android:text="@string/label_address"
+                            android:textSize="@dimen/label_size" />
+
+                        <TextView
+                            android:id="@+id/addressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_address"
+                            android:textSize="@dimen/content_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_contact_number"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/contactNoText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_contact_number"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_birthday"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/birthdayText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_birthday"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_birthplace"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/birthplaceText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_birthplace"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_civil_status"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/civilStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_civil_status"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_father"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/fatherText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_father"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_mother"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/motherText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_mother"
+                                android:textSize="@dimen/content_size" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="@dimen/column_spacing"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_email_address"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/emailText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_email_address"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_age"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/ageText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_age"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_citizenship"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/citizenshipText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_citizenship"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_religion"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/religionText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_religion"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_occupation"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/fatherOccupationText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_occupation"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_occupation"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/motherOccupationText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_occupation"
+                                android:textSize="@dimen/content_size" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/label_size" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/group_spacing"
+                android:text="@string/title_educational_background" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_primary"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/primaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_primary"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_secondary"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/secondaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_secondary"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_tertiary"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/tertiaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_tertiary"
+                                android:textSize="@dimen/content_size" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="@dimen/column_spacing"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_inclusive_year"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/primaryYearText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_inclusive_year"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_inclusive_year"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/secondaryYearText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_inclusive_year"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_inclusive_year"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/tertiaryYearText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_inclusive_year"
+                                android:textSize="@dimen/content_size" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/label_size" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/group_spacing"
+                android:text="@string/title_emergency_contact" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_name"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/emergencyContactNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_name"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_address"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/emergencyContactAddressText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_address"
+                                android:textSize="@dimen/content_size" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="@dimen/column_spacing"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_relationship"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/emergencyContactRelationshipText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_relationship"
+                                android:textSize="@dimen/content_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/label_top_padding"
+                                android:text="@string/label_contact_number"
+                                android:textSize="@dimen/label_size" />
+
+                            <TextView
+                                android:id="@+id/emergencyContactContactNoText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_contact_number"
+                                android:textSize="@dimen/content_size" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/label_size" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/group_spacing" />
+
+            <Button
+                android:id="@+id/buttBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/butt_back" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/group_spacing" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Add more TextViews as needed for other fields -->
+
+    <!-- TextViews for displaying educational info -->
+
+    <!-- TextViews for displaying emergency contact info -->
+
+</ScrollView>

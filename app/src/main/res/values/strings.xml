@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Creating Activity</string>
+    <string name="title_personal_information">PERSONAL INFORMATION:</string>
+    <string name="label_name">Name</string>
+    <string name="label_address">Address</string>
+    <string name="label_contact_number">Contact Number</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_birthday">Birthday</string>
+    <string name="label_age">Age</string>
+    <string name="label_birthplace">Birthplace</string>
+    <string name="label_citizenship">Citizenship</string>
+    <string name="label_civil_status">Civil Status</string>
+    <string name="label_religion">Religion</string>
+    <string name="label_father">Father</string>
+    <string name="label_occupation">Occupation</string>
+    <string name="label_mother">Mother</string>
+    <string name="title_educational_background">EDUCATIONAL BACKGROUND:</string>
+    <string name="label_primary">Primary</string>
+    <string name="label_inclusive_year">Inclusive Year</string>
+    <string name="label_secondary">Secondary</string>
+    <string name="label_tertiary">Tertiary</string>
+    <string name="title_emergency_contact">EMERGENCY CONTACT:</string>
+    <string name="label_relationship">Relationship</string>
+    <string name="butt_clear">CLEAR</string>
+    <string name="butt_done">DONE</string>
+    <string name="label_help_include_senior_high">Include Senior High, if applicable</string>
+    <string name="butt_back" >BACK</string>
+</resources>
